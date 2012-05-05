@@ -4,6 +4,7 @@ gem 'haml'
 gem 'sinatra', :require => 'sinatra'
 gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
 gem 'unicorn'
+gem 'yui-compressor', :require => 'yui/compressor'
 
 group :development do
   gem 'foreman'
