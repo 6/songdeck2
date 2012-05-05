@@ -2,6 +2,7 @@
 %head
   %meta{:charset => "utf-8"}
   %title Hello
-  = js :app
-  = css :app
+  %link{:rel => "stylesheet", :href => "/assets/application.css"}
+  %script{:src => "/assets/application.js"}
+  %script{:src => "/jst.js"}
 %body= yield
