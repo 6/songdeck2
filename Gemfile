@@ -2,8 +2,10 @@ source :rubygems
 
 gem 'coffee-script'
 gem 'haml'
+gem 'less'
 gem 'sinatra', :require => 'sinatra'
 gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
+gem 'therubyracer'
 gem 'unicorn'
 gem 'yui-compressor', :require => 'yui/compressor'
 
