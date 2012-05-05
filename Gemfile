@@ -1,5 +1,6 @@
 source :rubygems
 
+gem 'coffee-script'
 gem 'haml'
 gem 'sinatra', :require => 'sinatra'
 gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
