@@ -1,5 +1,3 @@
-require 'bundler'
-Bundler.require
 
 class App < Sinatra::Base
   register Sinatra::JstPages
