@@ -1,6 +1,7 @@
 !!! 5
-%meta{:charset => "utf-8"}
-%title Hello
-= js :app
-= css :app
-= yield
+%head
+  %meta{:charset => "utf-8"}
+  %title Hello
+  = js :app
+  = css :app
+%body= yield
