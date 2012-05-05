@@ -12,7 +12,7 @@ class App < Sinatra::Base
       '/js/vendor/*.js',
       '/js/*.js'
     ]
-    js_compression  :yui
+    js_compression :yui
     prebuild ENV['RACK_ENV'] == 'production'
   }
 
