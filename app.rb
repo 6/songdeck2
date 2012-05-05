@@ -1,5 +1,5 @@
-require 'sinatra'
-require 'sinatra/assetpack'
+require 'bundler'
+Bundler.require
 
 class App < Sinatra::Base
   register Sinatra::AssetPack

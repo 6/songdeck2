@@ -1,8 +1,8 @@
 source :rubygems
 
 gem 'haml'
-gem 'sinatra'
-gem 'sinatra-assetpack'
+gem 'sinatra', :require => 'sinatra'
+gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
 gem 'unicorn'
 
 group :development do
