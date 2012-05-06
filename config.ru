@@ -3,6 +3,7 @@ Bundler.setup :default, (ENV['RACK_ENV'] || 'development')
 
 require 'sinatra'
 require 'sinatra/backbone'
+require 'sinatra/contrib'
 require 'sprockets'
 require 'compass'
 require 'sprockets-sass'
