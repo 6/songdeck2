@@ -1,5 +1,14 @@
 require 'bundler'
-Bundler.require
+Bundler.setup :default, (ENV['RACK_ENV'] || 'development')
+
+require 'sinatra'
+require 'sinatra/backbone'
+require 'sprockets'
+require 'compass'
+require 'sprockets-sass'
+require 'bootstrap-sass'
+require 'coffee-script'
+require 'yui/compressor'
 
 set :root, File.dirname(__FILE__)
 

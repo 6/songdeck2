@@ -1,14 +1,18 @@
 source :rubygems
 
+gem 'bootstrap-sass'
 gem 'coffee-script'
+gem 'compass'
 gem 'haml'
 gem 'less'
-gem 'sinatra', :require => 'sinatra'
-gem 'sinatra-backbone', :require => 'sinatra/backbone'
-gem 'sprockets', :require => 'sprockets'
+gem 'sass'
+gem 'sinatra'
+gem 'sinatra-backbone'
+gem 'sprockets'
+gem 'sprockets-sass'
 gem 'therubyracer'
 gem 'unicorn'
-gem 'yui-compressor', :require => 'yui/compressor'
+gem 'yui-compressor'
 
 group :development do
   gem 'foreman'
