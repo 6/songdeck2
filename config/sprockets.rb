@@ -8,7 +8,7 @@ end
 
 configure :production, :test do
   sprockets.css_compressor = YUI::CssCompressor.new
-  sprockets.js_compressor = YUI::JavaScriptCompressor.new
+  #sprockets.js_compressor = YUI::JavaScriptCompressor.new
 end
 
 set :sprockets, sprockets
