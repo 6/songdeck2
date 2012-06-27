@@ -9,6 +9,7 @@ require 'compass'
 require 'sprockets-sass'
 require 'bootstrap-sass'
 require 'coffee-script'
+require 'uglifier'
 require 'yui/compressor'
 
 set :root, File.dirname(__FILE__)

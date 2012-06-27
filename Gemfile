@@ -12,6 +12,7 @@ gem 'sinatra-ember'
 gem 'sprockets'
 gem 'sprockets-sass'
 gem 'therubyracer'
+gem 'uglifier'
 gem 'unicorn'
 gem 'yui-compressor'
 
