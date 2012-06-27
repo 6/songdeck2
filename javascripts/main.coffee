@@ -1,5 +1,5 @@
 test_thing = ->
-  echo(JST['hello']({name: "Peter G", age: "23"}))
+  echo("YO")
 
 echo = (html) ->
   $("body").append(html)
