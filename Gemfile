@@ -4,7 +4,6 @@ gem 'bootstrap-sass'
 gem 'coffee-script'
 gem 'compass'
 gem 'haml'
-gem 'jasmine'
 gem 'less'
 gem 'sass'
 gem 'sinatra'
@@ -19,4 +18,8 @@ gem 'yui-compressor'
 group :development do
   gem 'foreman'
   gem 'heroku'
+end
+
+group :test do
+  gem 'jasmine'
 end
