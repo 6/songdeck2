@@ -3,7 +3,8 @@
   %meta{:charset => "utf-8"}
   %title Hello
   %link{:rel => "stylesheet", :href => "/assets/application.css"}
-  %script{:src => "/assets/application.js"}
   = yield_content :custom_head
 %body
   #content= yield
+  %script{:src => "/assets/application.js"}
+  %script{:src => "/jst.js"}
