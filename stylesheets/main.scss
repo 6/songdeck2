@@ -1,10 +1,24 @@
 @import "bootstrap/mixins";
 
 body {
-  color: darken(#f00, 20%);
+  background: #eee url(noise.png) repeat;
 }
 
-#test-bootstrap-mixins {
-  @include box-shadow;
-  @include gradientBar(#eee, #aaa);
+.content-center {
+  text-align: center;
+  margin: 120px auto;
+  width: 550px;
+  h1, h2 {
+    font-weight: normal;
+    line-height: 1.2em;
+  }
+  h1 {
+    margin: 15px 0;
+    font-size: 26px;
+    color: #222;
+  }
+  h2 {
+    font-size: 20px;
+    color: #888;
+  }
 }

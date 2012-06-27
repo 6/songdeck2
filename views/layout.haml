@@ -6,4 +6,5 @@
   %script{:src => "/assets/application.js"}
   %script{:src => "/jst.js"}
   = yield_content :custom_head
-%body= yield
+%body
+  #content= yield
