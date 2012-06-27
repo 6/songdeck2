@@ -17,6 +17,7 @@ gem 'yui-compressor'
 
 group :development do
   gem 'foreman'
+  gem 'guard-coffeescript'
   gem 'heroku'
 end
 
