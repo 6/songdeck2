@@ -16,7 +16,7 @@ set :root, File.dirname(__FILE__)
 require './config/sprockets'
 require './app' # Require your app with sprockets
 
-guard 'sprockets2', :sprockets => settings.sprockets, :assets_path => "public/test-assets", :gz => false, :digest => false do
+guard 'sprockets2', :sprockets => settings.sprockets, :assets_path => "public/test-assets", :gz => false, :digest => false, :clean => false do
   watch(%r{^javascripts/.+$})
   watch('app.rb')
 end
