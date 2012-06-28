@@ -1,5 +1,5 @@
 .DS_Store
 .sass-cache
 .env
-spec/assets/*
-!spec/assets/.gitkeep
+public/test-assets/*
+!public/test-assets/.gitkeep
