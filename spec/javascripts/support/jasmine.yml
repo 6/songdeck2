@@ -11,8 +11,7 @@
 #   - dist/**/*.js
 #
 src_files:
-    - javascripts/vendor/*.js
-    - public/javascripts/*.js
+  - spec/assets/application.js
 
 # stylesheets
 #
@@ -26,6 +25,7 @@ src_files:
 #   - stylesheets/*.css
 #
 stylesheets:
+  - spec/assets/application.css
 
 # helpers
 #

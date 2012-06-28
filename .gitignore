@@ -1,4 +1,5 @@
 .DS_Store
 .sass-cache
 .env
-public/javascripts/*.js
+spec/assets/*
+!spec/assets/.gitkeep
