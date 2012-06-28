@@ -1,18 +1,4 @@
-require 'bundler'
-Bundler.setup :default, (ENV['RACK_ENV'] || 'development')
-
-require 'sinatra'
-require 'sinatra/contrib'
-require 'sprockets'
-require 'compass'
-require 'sprockets-sass'
-require 'bootstrap-sass'
-require 'coffee-script'
-require 'uglifier'
-require 'yui/compressor'
-
-set :root, File.dirname(__FILE__)
-
+require './requires'
 require './config/sprockets'
 require './app'
 
