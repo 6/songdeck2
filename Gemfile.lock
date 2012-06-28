@@ -102,8 +102,6 @@ GEM
       rack-test
       sinatra (~> 1.3.0)
       tilt (~> 1.3)
-    sinatra-ember (0.0.1)
-      sinatra
     sprockets (2.4.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -142,7 +140,6 @@ DEPENDENCIES
   sass
   sinatra
   sinatra-contrib
-  sinatra-ember
   sprockets
   sprockets-sass
   therubyracer
