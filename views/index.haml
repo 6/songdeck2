@@ -1,10 +1,14 @@
-%header
-  .btn-control-wrap
-    %a.btn-control.btn-seek.btn-prev{:href => "#"}
-    %a.btn-control.btn-state.btn-play{:href => "#"}
-    %a.btn-control.btn-seek.btn-next{:href => "#"}
-.content-center
-  %h1
-    %img{:src => "/images/logo.png", :alt => "SongDeck", :title => "SongDeck"}
-  %h2 Listen to and organize any music, for free.
-  %h3 Find and stream music from YouTube, create playlists, and access your music from any computer or smartphone.
+%header seek (fluid), playback controls (repeat, shuffle), volume slider
+.sidebar
+  .btn-control-wrap-wrap
+    .btn-control-wrap.clearfix
+      %a.btn-control.btn-seek.btn-prev{:href => "#"}
+      %a.btn-control.btn-state.btn-play{:href => "#"}
+      %a.btn-control.btn-seek.btn-next{:href => "#"}
+  .video.hide
+.content-center-wrap
+  .content-center
+    %h1
+      %img{:src => "/images/logo.png", :alt => "SongDeck", :title => "SongDeck"}
+    %h2 Listen to and organize any music, for free.
+    %h3 Find and stream music from YouTube, create playlists, and access your music from any computer or smartphone.

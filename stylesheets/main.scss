@@ -4,18 +4,39 @@ body {
   background: #eee url(/images/noise.png) repeat;
 }
 
-$header-height: 80px;
+$header-height: 38px;
 $btn-state-dim: 68px;
 $btn-seek-dim: 52px;
+$sidebar-width: 220px;
 
 header {
+  margin-left: $sidebar-width;
   @include box-shadow;
-  @include gradientBar(#fff, #f8f8f8);
-  height: $header-height;
-  .btn-control-wrap {
-    width:$btn-state-dim + $btn-seek-dim*2 + 6;
-    margin:0 auto;
+  @include gradientBar(#fff, #f7f7f7);
+  height: $header-height; // todo get rid of this, use line-height/padding
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: $sidebar-width;
+  background: pink;
+  .btn-control-wrap-wrap {
+    @include gradientBar(#fff, #f5f5f5);
+    @include box-shadow;
   }
+  .playback-control-wrap {
+    @include gradientBar(#fff, #f5f5f5);
+    @include box-shadow;
+  }
+}
+
+.btn-control-wrap {
+  width: $btn-state-dim + $btn-seek-dim*2 + 6;
+  margin-left: 20px;
+  padding: 10px 0;
 }
 
 .btn-control {
@@ -25,7 +46,7 @@ header {
   &.btn-state {
     width: $btn-state-dim;
     height: $btn-state-dim;
-    margin-top: $header-height/2 - $btn-state-dim/2;
+    //margin-top: $header-height/2 - $btn-state-dim/2;
     background-image: url(/images/play_button.png);
     &.btn-play {
       background-position: 0 0;
@@ -43,7 +64,7 @@ header {
   &.btn-seek {
     width: $btn-seek-dim;
     height: $btn-seek-dim;
-    margin-top: $header-height/2 - $btn-seek-dim/2;
+    margin-top: $btn-state-dim/2 - $btn-seek-dim/2;
     background-image: url(/images/next_button.png);
     &.btn-next {
       background-position: 0 0;
@@ -60,9 +81,13 @@ header {
   }
 }
 
+.content-center-wrap {
+  margin-left: $sidebar-width;
+}
+
 .content-center {
   text-align: center;
-  margin: 60px auto;
+  margin: 80px auto;
   width: 550px;
   h2, h3 {
     font-weight: normal;
