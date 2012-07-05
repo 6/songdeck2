@@ -4,21 +4,21 @@ body {
   background: #fff;
 }
 
-$header-height: 88px;
+$header-height: 42px;
 $btn-state-dim: 68px;
 $btn-seek-dim: 52px;
 $sidebar-width: 220px;
 
 header {
-  margin-left: $sidebar-width + 1;
-  @include box-shadow;
+  //@include box-shadow;
   @include gradientBar(#eee, #ddd);
-  height: $header-height; // todo get rid of this, use line-height/padding
+  border-bottom: 1px solid #ccc;
+  height: $header-height - 1; // todo get rid of this, use line-height/padding
 }
 
 .sidebar {
   position: absolute;
-  top: 0;
+  top: $header-height;
   left: 0;
   bottom: 0;
   width: $sidebar-width;
