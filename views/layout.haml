@@ -1,9 +1,8 @@
 !!! 5
-%head
-  %meta{:charset => "utf-8"}
-  %title SongDeck
-  %link{:rel => "stylesheet", :href => "/assets/application.css"}
-  = yield_content :custom_head
+%meta{:charset => "utf-8"}
+%title SongDeck
+%link{:rel => "stylesheet", :href => "/assets/application.css"}
+= yield_content :custom_head
 %body
   #content= yield
   %script{:src => "/assets/application.js"}
