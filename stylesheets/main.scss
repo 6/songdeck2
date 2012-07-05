@@ -4,7 +4,7 @@ body {
   background: #fff;
 }
 
-$header-height: 43px;
+$header-height: 45px;
 $btn-state-dim: 68px;
 $btn-seek-dim: 52px;
 $sidebar-width: 210px;
@@ -14,8 +14,9 @@ header {
   @include gradientBar(#fff, #f5f5f5);
   border-bottom: 1px solid #ccc;
   height: $header-height - 1; // todo get rid of this, use line-height/padding
+  margin-left: $sidebar-width + 1;
   .search-wrap {
-    margin-top: 7px;
+    margin-top: 8px;
     margin-right: 10px;
     .btn, .search-input{
       margin-top: 0;
@@ -26,7 +27,7 @@ header {
 
 .sidebar {
   position: absolute;
-  top: $header-height;
+  top: 0;
   left: 0;
   bottom: 0;
   width: $sidebar-width;
