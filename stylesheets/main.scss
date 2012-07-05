@@ -4,15 +4,15 @@ body {
   background: #fff;
 }
 
-$header-height: 38px;
+$header-height: 55px;
 $btn-state-dim: 68px;
 $btn-seek-dim: 52px;
 $sidebar-width: 220px;
 
 header {
-  margin-left: $sidebar-width;
+  margin-left: $sidebar-width + 1;
   @include box-shadow;
-  @include gradientBar(#fff, #f7f7f7);
+  @include gradientBar(#fff, #f5f5f5);
   height: $header-height; // todo get rid of this, use line-height/padding
 }
 
@@ -22,7 +22,8 @@ header {
   left: 0;
   bottom: 0;
   width: $sidebar-width;
-  background: pink;
+  background: #f1f7ff;
+  border-right: 1px solid #e1e7ea;
   .btn-control-wrap-wrap {
     @include gradientBar(#fff, #f5f5f5);
     @include box-shadow;
@@ -82,7 +83,7 @@ header {
 }
 
 .content-center-wrap {
-  margin-left: $sidebar-width;
+  margin-left: $sidebar-width + 1;
 }
 
 .content-center {
