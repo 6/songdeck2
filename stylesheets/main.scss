@@ -4,9 +4,65 @@ body {
   background: #eee url(/images/noise.png) repeat;
 }
 
+$header-height: 80px;
+$btn-state-dim: 68px;
+$btn-seek-dim: 52px;
+
+header {
+  @include box-shadow;
+  @include gradientBar(#fff, #f8f8f8);
+  height: $header-height;
+  .btn-control-wrap {
+    width:$btn-state-dim + $btn-seek-dim*2 + 6;
+    margin:0 auto;
+  }
+}
+
+.btn-control {
+  display: block;
+  float: left;
+  margin: 0 1px;
+  &.btn-state {
+    width: $btn-state-dim;
+    height: $btn-state-dim;
+    margin-top: $header-height/2 - $btn-state-dim/2;
+    background-image: url(/images/play_button.png);
+    &.btn-play {
+      background-position: 0 0;
+      &:active {
+        background-position:-$btn-state-dim 0;
+      }
+    }
+    &.btn-pause {
+      background-position: -$btn-state-dim*2 0;
+      &:active {
+        background-position: -$btn-state-dim*3 0;
+      }
+    }
+  }
+  &.btn-seek {
+    width: $btn-seek-dim;
+    height: $btn-seek-dim;
+    margin-top: $header-height/2 - $btn-seek-dim/2;
+    background-image: url(/images/next_button.png);
+    &.btn-next {
+      background-position: 0 0;
+      &:active {
+        background-position:-$btn-seek-dim 0;
+      }
+    }
+    &.btn-prev {
+      background-position: -$btn-seek-dim*2 0;
+      &:active {
+        background-position: -$btn-seek-dim*3 0;
+      }
+    }
+  }
+}
+
 .content-center {
   text-align: center;
-  margin: 120px auto;
+  margin: 60px auto;
   width: 550px;
   h2, h3 {
     font-weight: normal;
