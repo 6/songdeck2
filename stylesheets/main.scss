@@ -7,7 +7,7 @@ body {
 $header-height: 42px;
 $btn-state-dim: 68px;
 $btn-seek-dim: 52px;
-$sidebar-width: 220px;
+$sidebar-width: 210px;
 
 header {
   //@include box-shadow;
@@ -36,7 +36,7 @@ header {
 
 .btn-control-wrap {
   width: $btn-state-dim + $btn-seek-dim*2 + 6;
-  margin-left: 20px;
+  margin: 0 auto;
   padding: 10px 0;
 }
 
