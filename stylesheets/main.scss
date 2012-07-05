@@ -4,7 +4,7 @@ body {
   background: #fff;
 }
 
-$header-height: 55px;
+$header-height: 88px;
 $btn-state-dim: 68px;
 $btn-seek-dim: 52px;
 $sidebar-width: 220px;
@@ -12,7 +12,7 @@ $sidebar-width: 220px;
 header {
   margin-left: $sidebar-width + 1;
   @include box-shadow;
-  @include gradientBar(#fff, #f5f5f5);
+  @include gradientBar(#eee, #ddd);
   height: $header-height; // todo get rid of this, use line-height/padding
 }
 
