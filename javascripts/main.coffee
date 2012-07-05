@@ -7,4 +7,4 @@ $ ->
 
   MainView = Ember.View.create(
     templateName: "yo"
-  ).appendTo("#content")
+  )#.appendTo("#content")
