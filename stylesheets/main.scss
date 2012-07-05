@@ -11,7 +11,7 @@ $sidebar-width: 220px;
 
 header {
   //@include box-shadow;
-  @include gradientBar(#eee, #ddd);
+  @include gradientBar(#fff, #f5f5f5);
   border-bottom: 1px solid #ccc;
   height: $header-height - 1; // todo get rid of this, use line-height/padding
 }
@@ -23,7 +23,7 @@ header {
   bottom: 0;
   width: $sidebar-width;
   background: #f1f7ff;
-  border-right: 1px solid #e1e7ea;
+  border-right: 1px solid #d1d7da;
   .btn-control-wrap-wrap {
     @include gradientBar(#fff, #f5f5f5);
     @include box-shadow;
